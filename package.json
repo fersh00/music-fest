@@ -1,26 +1,28 @@
 {
-  "name": "music-fest",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type":"module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch src/scss:build/css",
-    "tarea":"gulp tarea"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fersh00/music-fest.git"
-  },
-  "author": "fersh00",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fersh00/music-fest/issues"
-  },
-  "homepage": "https://github.com/fersh00/music-fest#readme",
-  "devDependencies": {
-    "gulp": "^5.0.0",
-    "sass": "^1.75.0"
-  }
+	"name": "music-fest",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "sass --watch src/scss:build/css",
+		"tarea": "gulp tarea",
+    "css" : "gulp css",
+    "dev": "gulp dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/fersh00/music-fest.git"
+	},
+	"author": "fersh00",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/fersh00/music-fest/issues"
+	},
+	"homepage": "https://github.com/fersh00/music-fest#readme",
+	"devDependencies": {
+		"gulp": "^5.0.0",
+		"gulp-sass": "^5.1.0",
+		"sass": "^1.75.0"
+	}
 }
