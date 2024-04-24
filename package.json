@@ -16,7 +16,7 @@
     "url": "https://github.com/fersh00/music-fest/issues"
   },
   "homepage": "https://github.com/fersh00/music-fest#readme",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.75.0"
   }
 }
