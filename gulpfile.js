@@ -1,7 +1,8 @@
-//
 
-function tarea() {
+
+export function tarea(done) {
     console.log('Mi primer tarea');
+    done();
 }
 
-exports.Mitarea = tarea;
+//exports.tarea = tarea;
