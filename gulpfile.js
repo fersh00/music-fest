@@ -1,6 +1,6 @@
 const { src, dest, watch } = require('gulp')
-
 const sass = require('gulp-sass')(require('sass'))
+const plumber = require('gulp-plumber')
 
 // export function tarea(done) {
 //     console.log('Mi primer tarea');
@@ -10,7 +10,8 @@ const sass = require('gulp-sass')(require('sass'))
 //exports.tarea = tarea;
 
 function css(done) {
-	src('src/scss/app.scss') //Identificar arch SASS
+	src('src/scss/**/*.scss') //Identificar arch SASS
+		.pipe(plumber())
 		.pipe(sass()) //Compilar
 		.pipe(dest('build/css')) //Almacenarlo en dd
 
@@ -18,8 +19,8 @@ function css(done) {
 }
 
 function dev(done) {
-    watch('src/scss/app.scss', css)
-    done()
+	watch('src/scss/**/*.scss', css)
+	done()
 }
 
 exports.css = css

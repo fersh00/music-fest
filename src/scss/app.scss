@@ -1,4 +1,6 @@
-$rojo: red;
+@use 'variables';
+@use 'normalize';
+
 
 body {
     background-color: $rojo;
