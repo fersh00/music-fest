@@ -1,8 +1,5 @@
-@use 'variables';
-@use 'normalize';
+@use 'base';
+@use 'layout';
 
 
-body {
-    background-color: $rojo;
-}
 
